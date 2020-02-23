@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calculator</title>
+	 <script src="https://kit.fontawesome.com/3429d9c18b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="calculator">
+
+		<div class="container">
+
+			<div class="block-textview">
+
+				<input type="text" name="textview" id="textview" placeholder="0,00" class="textview up" readonly="readonly">
+				<input type="text" name="textview" id="textview" placeholder="0,00" class="textview bottom" readonly="readonly">
+
+			</div>
+
+
+			<div class="block-buttons">
+
+				<div type="button" class="key-button green-button" onclick="resetCalc()"><span class="key-button-text">C</span></div>
+
+				<div class="key-long-button green-button" type="button"  onclick="backspace()"><i class="fas fa-backspace"></i></div>
+
+				<div class="key-button orange-button" type="button"   onclick="input('/')"><span class="key-button-text">÷</span></div>
+
+			</div>
+
+
+			<div class="block-buttons">
+
+				<div class="key-button green-button" type="button"  onclick="input('9')"><span class="key-button-text">9</span></div>
+
+				<div class="key-button green-button" type="button"  onclick="input('8')"><span class="key-button-text">8</span></div>
+
+				<div class="key-button green-button" type="button"  onclick="input('7')"><span class="key-button-text">7</span></div>
+
+				<div class="key-button orange-button" type="button"  onclick="input('*')"><span class="key-button-text">×</span></div>
+
+			</div>
+
+
+			<div class="block-buttons">
+
+				<div class="key-button green-button"type="button"   onclick="input('6')"><span class="key-button-text">6</span></div>
+
+				<div class="key-button green-button" type="button"  onclick="input('5')"><span class="key-button-text">5</span></div>
+
+				<div class="key-button green-button" type="button"  onclick="input('4')"><span class="key-button-text">4</span></div>
+
+				<div class="key-button orange-button" type="button" onclick="input('-')"><span class="key-button-text">-</span></div>
+
+			</div>
+
+
+			<div class="block-buttons">
+
+				<div class="key-button green-button" type="button"  onclick="input('3')"><span class="key-button-text">3</span></div>
+
+				<div class="key-button green-button" type="button"  onclick="input('2')"><span class="key-button-text">2</span></div>
+
+				<div class="key-button green-button" type="button"  onclick="input('1')"><span class="key-button-text">1</span></div>
+
+				<div class="key-button orange-button" type="button" onclick="input('+')"><span class="key-button-text">+</span></div>
+
+			</div>
+
+
+			<div class="block-buttons">
+
+				<div class="key-long-button green-button" type="button" onclick="input('0')"><span class="key-button-text">0</span></div>
+
+				<div class="key-button green-button" type="button" onclick="input('.')"><span class="key-button-text">.</span></div>
+
+				<div class="key-button key-around orange-button" type="button" onclick="result()">
+
+					<div class="line"></div> 
+					<div class="line"></div>
+			</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+	<script src ="https://code.jquery.com/jquery-3.4.1.min.js" > </script > 
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
